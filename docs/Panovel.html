@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content>
+  <title>Panovel</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">#sidebar {right: 1em;top: 3em;margin: 0;text-align: left;padding: 0;position: fixed;overflow-y: auto;overflow-x: hidden;max-width: 350px;max-height: 75%;}#sidebar ul {display: none;width: 100%;list-style: none;margin: 0;margin-top: -0.5em;background: #fff;}#sidebar ul li a {display: block;padding: 0.5em;background: #FFFFFF;color: #000000;text-decoration: none;}#sidebar ul li a:hover {color: #FFFFFF;background: #555;}#sidebar ul li ul {padding-top: 0.5em;}#sidebar ul li ul li a {padding-left: 1.5em;}#sidebar ul li ul li ul li a {padding-left: 3.125em;}#sidebar input.trigger {position: absolute;top: -9999px;left: -9999px;}#sidebar input.trigger:checked ~ ul, #sidebar input.trigger:checked ~ ul li ul {display: block !important;}#sidebar label {position: fixed;right: 0.5em;top: 0.2em;width: 1.2em;height: 1.2em;text-align: center;font-size: 2em;background: #FFFFFF;color: #000000;}#sidebar label:after {content: "≡";}#sidebar label:hover {color: #FFFFFF;background: #555;}body {margin: 0 0 3em 0;padding: 0;text-align: justify;}.base {margin: 80px auto 0 auto;max-width: 700px;box-shadow: 1px 4px 14px #888;}.text_area {margin: 2em auto 2em auto;padding: 15px;max-width: 600px;}code {font-family: monospace;}p {margin: 0;margin-top: 0.5em;text-align: justify;text-indent: 0;}h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {margin: 0;text-align: justify;text-indent: 0;}.NewScene {margin-top: 0.75em;margin-bottom: 0.75em;text-indent: 0;text-align: center;}.NewScene + p {text-indent: 0;}.szeneimg {width: 10%;vertical-align: middle;}.chapterdiv {text-align: center;margin-top: 0;margin-bottom: 1.5em;}.chapterdiv + p {text-indent: 0;}.chapterimg {width: 100%;}div.noindent {margin: 0;}div.noindent p {text-indent: 0;}div.align_left {margin: 0;}div.align_left p {text-align: left;}div.align_center {margin: 0;}div.align_center p {text-align: center;}div.align_right {margin: 0;}div.align_right p {text-align: right;}.pagebreak {page-break-after: always;}a {color: inherit;text-decoration: none;}a .footnoteRef {vertical-align: super;}h1 {margin-top: 1em;margin-bottom: 2em;font-size: 1.5em;text-align: center;font-weight: bold;page-break-before: always;text-indent: 0;}h2 {margin-top: 1em;margin-bottom: 1.5em;font-size: 1.3em;text-align: center;font-weight: bold;page-break-before: always;text-indent: 0;}h3 {margin-top: 1em;margin-bottom: 1em;font-size: 1.2em;text-align: center;font-weight: bold;text-indent: 0;}dt {float: left;width: 120px;font-weight: bold;}dd {margin-left: 120px;}dd p {margin: 0;}.header_image h1, .header_image h2 {margin-bottom: 0;}.figure {text-align: center;margin: 1em 0;max-width: 100%;max-height: 100%;page-break-inside: avoid;clear: both;}.figure img {max-height: 100%;max-width: 100%;}.figure .caption {text-indent: 0;text-align: center;font-style: italic;padding-left: 1em;padding-right: 1em;}div.dedication {padding-top: 35%;padding-left: 20%;padding-right: 20%;page-break-before: always;page-break-after: always;}div.dedication p {text-indent: 0em;text-align: center;}div.Poem {margin-top: 1em;margin-bottom: 1em;margin-right: 1em;margin-left: 1em;text-align: left;}div.Poem .Stanza {page-break-inside: avoid;}div.Poem p, div.Poem div {text-indent: -0.5em;margin-left: 1.5em;margin-top: 0;margin-bottom: 0;}div.Poem + p {text-indent: 0;}div.Poem .PoemAuthor {font-style: italic;text-indent: 0;text-align: right;}div.Poem .PoemTitle {font-weight: bold;text-indent: 0;text-align: right;}div.Poem .PoemTitleTop {font-weight: bold;text-indent: 0;text-align: center;}div.Poem .PoemAuthorTop {font-style: italic;text-indent: 0;text-align: center;}div.Poem .PoemAuthorTop + p, div.Poem .PoemTitleTop + p {padding-top: 1em;}div.Poem .PoemTitleTop + .PoemAuthorTop {padding-top: 0.2em;}div.Poem .PoemSingle {text-indent: 0;text-align: right;}div.QuoteBlock {margin-left: 2em;margin-right: 2em;margin-top: 1em;margin-bottom: 1em;text-indent: 0;}div.QuoteBlock p {text-indent: 0;margin-top: 0;margin-bottom: 0;}div.QuoteBlock p + p {text-indent: 1.2em;}div.QuoteBlock .QuoteAuthor {font-style: italic;text-indent: 0;text-align: right;}div.QuoteBlock .QuoteScource {font-weight: bold;text-indent: 0;text-align: right;}div.QuoteBlock .QuoteScourceTop {font-weight: bold;text-indent: 0;text-align: center;}div.QuoteBlock .QuoteAuthorTop {font-style: italic;text-indent: 0;text-align: center;}div.QuoteBlock .QuoteAuthorTop + p, div.QuoteBlock .QuoteScourceTop + p {padding-top: 1em;}div.QuoteBlock .QuoteScourceTop + .QuoteAuthorTop {padding-top: 0.2em;}div.QuoteBlock .QuoteSingle {text-indent: 0;text-align: right;}div.Epigraph {margin-top: 0;margin-bottom: 1em;margin-left: 55%;margin-right: 1em;text-indent: 0;text-align: left;}div.Epigraph p {margin-top: 0;margin-bottom: 0;text-indent: 0;}div.Epigraph + p {text-indent: 0;}div.Epigraph .EpigraphAuthor {font-style: italic;text-align: right;border-top: thin solid;}.DefinitionTerm {margin: 0;font-weight: bold;text-indent: 0em;}.DefinitionDescription {margin-left: 2em;text-indent: 0em;}.author {margin-top: 3em;margin-bottom: 3em;text-indent: 0em;font-size: 1.5em;text-align: center;}div.copyrights {padding-top: 5%;padding-left: 5%;padding-right: 5%;page-break-before: always;page-break-after: always;}div.copyrights p {font-size: 0.8em;text-indent: 0em;text-align: center;}.publisher {margin-top: 3em;margin-bottom: 3em;text-indent: 0em;font-size: 1.2em;text-align: center;}.main {margin-top: 2em;text-indent: 0em;font-size: 1.6em;font-weight: bold;text-align: center;}.title {margin-top: 2em;text-indent: 0em;font-size: 1.6em;font-weight: bold;text-align: center;}.subtitle {margin-top: 1em;text-indent: 0em;font-size: 1.4em;font-style: italic;text-align: center;}div#cover-image img {max-height: 100%;max-width: 100%;}ol.toc {padding: 0;margin-left: 1em;}ol.toc li {list-style-type: none;margin: 0;padding: 0;}em, em em em, em em em em em {font-style: italic;}em em, em em em em {font-style: normal;}</style>
+</head>
+<body>
+<header>
+</header>
+<nav role="navigation" id="sidebar">
+  <input class="trigger" type="checkbox" id="mainNavButton">
+  <label for="mainNavButton" onclick></label>
+  <ul>
+  <li><a href="#introduction"><span class="toc-section-number">0.1</span> Introduction</a></li>
+  <li><a href="#how-does-this-work"><span class="toc-section-number">0.2</span> How does this work?</a></li>
+  <li><a href="#installation"><span class="toc-section-number">0.3</span> Installation</a><ul>
+  <li><a href="#prerequisites"><span class="toc-section-number">0.3.1</span> Prerequisites</a></li>
+  <li><a href="#installing-this-script"><span class="toc-section-number">0.3.2</span> Installing this script</a></li>
+  </ul></li>
+  <li><a href="#starting-a-new-project"><span class="toc-section-number">0.4</span> Starting a new project</a><ul>
+  <li><a href="#structure"><span class="toc-section-number">0.4.1</span> Structure</a></li>
+  </ul></li>
+  <li><a href="#the-command-line-interface"><span class="toc-section-number">0.5</span> The command line interface</a></li>
+  <li><a href="#formating"><span class="toc-section-number">0.6</span> Formating</a><ul>
+  <li><a href="#usage"><span class="toc-section-number">0.6.1</span> Usage</a></li>
+  <li><a href="#some-additional-tips"><span class="toc-section-number">0.6.2</span> Some additional Tips</a></li>
+  </ul></li>
+  <li><a href="#configuration"><span class="toc-section-number">0.7</span> Configuration</a></li>
+  <li><a href="#building-the-books"><span class="toc-section-number">0.8</span> Building the books</a><ul>
+  <li><a href="#for-advanced-users"><span class="toc-section-number">0.8.1</span> For advanced users</a></li>
+  </ul></li>
+  <li><a href="#list-of-styles"><span class="toc-section-number">0.9</span> List of styles</a><ul>
+  <li><a href="#align"><span class="toc-section-number">0.9.1</span> align</a></li>
+  <li><a href="#copyrights"><span class="toc-section-number">0.9.2</span> copyrights</a></li>
+  <li><a href="#dedication"><span class="toc-section-number">0.9.3</span> dedication</a></li>
+  <li><a href="#epigraph"><span class="toc-section-number">0.9.4</span> epigraph</a></li>
+  <li><a href="#new_scene"><span class="toc-section-number">0.9.5</span> new_scene</a></li>
+  <li><a href="#noindent"><span class="toc-section-number">0.9.6</span> noindent</a></li>
+  <li><a href="#poem"><span class="toc-section-number">0.9.7</span> poem</a></li>
+  <li><a href="#quote"><span class="toc-section-number">0.9.8</span> quote</a></li>
+  </ul></li>
+  <li><a href="#filter"><span class="toc-section-number">0.10</span> Filter</a><ul>
+  <li><a href="#epub_remove_fm_head"><span class="toc-section-number">0.10.1</span> epub_remove_fm_head</a></li>
+  <li><a href="#header_fleuron"><span class="toc-section-number">0.10.2</span> header_fleuron</a></li>
+  <li><a href="#remove_comments"><span class="toc-section-number">0.10.3</span> remove_comments</a></li>
+  <li><a href="#remove_images"><span class="toc-section-number">0.10.4</span> remove_images</a></li>
+  </ul></li>
+  </ul>
+</nav>
+<div class="base">
+<div class="text_area">
+<h1 class="title">Panovel</h1>
+<h2 id="introduction"><span class="header-section-number">0.1</span> Introduction</h2>
+<p>The purpose of this little project is to make the process of producing a novel targeting different formats easier and more streamlined.</p>
+<p>You just write the book in markdown, a very basic and easy to use markup language. You don’t need a word processor for this, every editor will do. Then you just edit the metadata.yaml file with the options you want to use and execute the script. Voila: You have produced your book as an eBook and a pdf, ready to be printed! The main advantage of this method is, that you don’t have to maintain different files for different formats.</p>
+<h2 id="how-does-this-work"><span class="header-section-number">0.2</span> How does this work?</h2>
+<p>This project is a wrapper around <a href="http://pandoc.org/index.html">pandoc</a>. It automates many steps that would be needed to convert the files manually and provides an example metadata.yaml file for easy configuration. In addition it provides many filters for pandoc to style some special elements.</p>
+<h2 id="installation"><span class="header-section-number">0.3</span> Installation</h2>
+<h3 id="prerequisites"><span class="header-section-number">0.3.1</span> Prerequisites</h3>
+<p>Before you can use this template, you need some programs installed on your computer:</p>
+<ol type="1">
+<li><p>Python 3.6 or higher: You can get <a href="https://www.python.org/">python here</a>.</p></li>
+<li><p>Pandoc: You can download <a href="http://pandoc.org/index.html">pandoc here</a>.</p></li>
+<li><p>A latex distribution: If you want a pdf in addition to an epub, you need to install a latex engine. Depending on your operating system, this are some popular choices:</p>
+<ul>
+<li><p>Windows: <a href="https://miktex.org/download">MiKTeX</a>. I recommend the full webinstall. It is very big and takes quite some time, but you don’t need to install any packages yourself this way.</p></li>
+<li><p>MacOS: <a href="https://tug.org/mactex/">MacTeX</a></p></li>
+<li><p>Linux: <a href="http://www.tug.org/texlive/">TeXLive</a> via the package manager</p></li>
+</ul>
+<strong>Additional packages for latex:</strong> If you didn’t choose a complete latex distribution, you may have to install some additional packages in them. All of these distributions have a package manager you can use to download the needed packages. This template needs these three packages:
+<ul>
+<li>koma-script</li>
+<li>verse</li>
+<li>titletoc Pandoc needs some packages too. You can find the list in pandocs documentation (depending on the distribution, most or all could be installed already).</li>
+</ul></li>
+<li><p>Kindlegen: If you want to convert your book for amazons kindle, you need this little tool from amazon. You can get it <a href="https://www.amazon.com/gp/feature.html?docId=1000765211">here</a>.</p></li>
+</ol>
+<h3 id="installing-this-script"><span class="header-section-number">0.3.2</span> Installing this script</h3>
+<p>Now you need to install this script itself. Open the console and enter:</p>
+<pre><code>pip3 install panovel</code></pre>
+<p><strong>How to open the command prompt on windows</strong>: There are many ways to open the console on windows. Instead of the command prompt, you can use Powershell, if you like. The ways to access Powershell are mostly the same. Here are a few examples:</p>
+<ul>
+<li>Press the windows key and x. Now the power menu pops open. Select the command prompt from it.</li>
+<li>In the file explorer, enter <code>cmd</code> in the adressbar</li>
+<li>In the file explorer shift - right click on a folder and select <code>Open command window here</code></li>
+<li>In the file explorer click on the <code>file</code> menu item and select <code>Open command prompt</code>. You can even add this command to the menu toolbar with the right click option menu for more convinient use.</li>
+</ul>
+<h2 id="starting-a-new-project"><span class="header-section-number">0.4</span> Starting a new project</h2>
+<p>Panovel can create a project folder for you, which includes anything you need to get started with your new project. Open the console in the folder you want to create your new project folder in. Then enter the following into the console:</p>
+<pre><code>panovel your_project_name</code></pre>
+<p>Per default, this creates a basic metadata.yaml file. If you need all available options, you can instead enter:</p>
+<pre><code>panovel your_project_name -c</code></pre>
+<p>Of course you can always create the full metadata file later, by opening the console in the project folder and entering:</p>
+<pre><code>panovel -c</code></pre>
+<h3 id="structure"><span class="header-section-number">0.4.1</span> Structure</h3>
+<p>All markdown files in the folder are used to create the book. You can therefor either have your book in just one file or in different files. All files are joined alphabetically or you can specify the exact sequence in the metadata file. In addition you can specify the files containing the front- and backmatter.</p>
+<p>The image folder holds all images used, for example the cover for the epub/mobi file.</p>
+<h2 id="the-command-line-interface"><span class="header-section-number">0.5</span> The command line interface</h2>
+<p>Panovel has a small list of additional options available for more advanced uses. Enter</p>
+<pre><code>panovel -h</code></pre>
+<p>in the console, to see all options available.</p>
+<h2 id="formating"><span class="header-section-number">0.6</span> Formating</h2>
+<h3 id="usage"><span class="header-section-number">0.6.1</span> Usage</h3>
+<p>Markdown is used to format the book. You can use all functionality provided by <a href="http://pandoc.org/MANUAL.html#pandocs-markdown">pandocs markdown</a>. But while markdown excels at light markup, sometimes you need special formatting. Poems, epigraphs etc. are good examples. To make formatting these elements easy, this template comes with an easy to use syntax for many such elements. Each of this styles comes with one or more filters, which formats these elements according to the output format.</p>
+<p>The syntax is very easy:</p>
+<pre><code>~~~{.type .option key=value}
+The content that should be styled.
+~~~</code></pre>
+<p>Types and simple options are preceded by a dot, attributes consist of a name and a value. These options are separated by a simple space. If the value of an attribute contains spaces, you need to surround it with quotation marks.</p>
+<p>For example, this is how you would implement a poem:</p>
+<pre><code>~~~{.poem author=&quot;William Shakespeare&quot; title=&quot;Sonnet 18&quot;}
+Shall I compare thee to a summer's day?
+Thou art more lovely and more temperate:
+Rough winds do shake the darling buds of May,
+And summer's lease hath all too short a date:
+
+Sometime too hot the eye of heaven shines,
+And often is his gold complexion dimmed,
+And every fair from fair sometime declines,
+By chance, or nature's changing course untrimmed:
+
+But thy eternal summer shall not fade,
+Nor lose possession of that fair thou ow'st,
+Nor shall death brag thou wand'rest in his shade,
+When in eternal lines to time thou grow'st,
+
+|       So long as men can breathe or eyes can see,
+|       So long lives this, and this gives life to thee.
+~~~</code></pre>
+<p>You can find a <a href="#list-of-styles">description of all the provided styles</a> at the end of this documentation.</p>
+<h3 id="some-additional-tips"><span class="header-section-number">0.6.2</span> Some additional Tips</h3>
+<p>You can use html style comments in your source files. But not inside other style elements. Such a comment looks like this:</p>
+<pre><code>&lt;!-- This is a comment. --&gt;</code></pre>
+<p>You can add a curly bracket with “.unnumbered” or “-” inside it at the end of a heading, to exclude it from the automatic numbering, if you chose to use that.</p>
+<pre><code># Example Heading{.unnumbered}
+# Example Heading{-}</code></pre>
+<h2 id="configuration"><span class="header-section-number">0.7</span> Configuration</h2>
+<p>You configure how your novel is build through the “metadata.yaml” file. It consists of fields you enter your data into. Each field starts with its name and a colon. Your data comes behind the colon. Many fields have example values - just overwrite them.</p>
+<p>Some fields are lists and can take multiple values. List items begin in the next line, indented and preceded by a dash. Just orientate yourself on the examples.</p>
+<p>Lines beginning with a ‘#’ are comments. They mostly explain what the field controls. Sometimes the actual field is commented out, which means it is ignored. That is an easy way to enable a feature. Just remove the ‘#’.</p>
+<p>The metadata file should be rather self explanatory. There are only a couple of things you have to add to make it work:</p>
+<ul>
+<li>The title of the book</li>
+<li>The author</li>
+<li>The path to kindlegen, if you want to convert for kindle</li>
+</ul>
+<p>If you have frontmatter and/or backmatter in seperate files, remember to add the filenames to the corresponding field.</p>
+<h2 id="building-the-books"><span class="header-section-number">0.8</span> Building the books</h2>
+<p>On windows you can simply use the provided bat file. Just double click it and your book is build. Otherwise the script is invoked from the command line. Just enter:</p>
+<pre><code>panovel</code></pre>
+<h3 id="for-advanced-users"><span class="header-section-number">0.8.1</span> For advanced users</h3>
+<p>panovel accepts command line arguments. These overwrite the corresponding settings in the metadata.yaml. Just invoke it with the -h argument to see the options available.</p>
+<h2 id="list-of-styles"><span class="header-section-number">0.9</span> List of styles</h2>
+<p>Below you find a description of each type provided with the template and which filter is used to render it. If no filter is given, it is named like the style. Some styles have options how they should look in the rendered book. You can change these in the metadata.yaml file.</p>
+<h3 id="align"><span class="header-section-number">0.9.1</span> align</h3>
+<p>Needs a second qualifier, one of ‘.center’, ‘.right’ or ‘.left’.</p>
+<p>Text gets aligned accordingly inside the block.</p>
+<h3 id="copyrights"><span class="header-section-number">0.9.2</span> copyrights</h3>
+<p>You need your copyrights surrounded by this style to be recognized properly.</p>
+<h3 id="dedication"><span class="header-section-number">0.9.3</span> dedication</h3>
+<p>You need your dedication surrounded by this style to be recognized properly.</p>
+<h3 id="epigraph"><span class="header-section-number">0.9.4</span> epigraph</h3>
+<p>Adds an epigraph.</p>
+<p><strong>Attributes:</strong></p>
+<dl>
+<dt>author</dt>
+<dd>The author of the epigraph
+</dd>
+</dl>
+<h3 id="new_scene"><span class="header-section-number">0.9.5</span> new_scene</h3>
+<p>This style is an exception to all others. To make a new scene, just enter three ’*’ on one line surrounded by blank lines. Please note, that this overrides one default markdown command for a horizontal line. Just use <code>---</code> for horizontal lines.</p>
+<p><strong>Example:</strong></p>
+<p><code>The last paragraph in the old scene.</code></p>
+<p><code>* * *</code></p>
+<p><code>The first paragraph in the new scene.</code></p>
+<p><strong>Render Options:</strong></p>
+<dl>
+<dt>default</dt>
+<dd>A new scene is marked by blank space
+</dd>
+<dt>stars</dt>
+<dd>A new scene is marked by <code>* * *</code>
+</dd>
+<dt>fleuron</dt>
+<dd>A new scene is marked by an image. You need to provide an image in the options
+</dd>
+</dl>
+<h3 id="noindent"><span class="header-section-number">0.9.6</span> noindent</h3>
+<p>The paragraph is not indented.</p>
+<h3 id="poem"><span class="header-section-number">0.9.7</span> poem</h3>
+<p>Styles the content as a poem. There are three render options for this style, each just formatting the poem slightly different.</p>
+<p><strong>Render Options:</strong></p>
+<dl>
+<dt>bottom</dt>
+<dd>Title and author are positioned on the bottom right of the poem
+</dd>
+<dt>one-line</dt>
+<dd>As above, but title and author appear on one line
+</dd>
+<dt>top</dt>
+<dd>This filter inserts the title at the top of the poem
+</dd>
+</dl>
+<p><strong>Options:</strong></p>
+<dl>
+<dt>altverse</dt>
+<dd>This option indents every other line in a stanza
+</dd>
+<dt>top</dt>
+<dd>Positions the title on the top, regardless of the render option used
+</dd>
+<dt>bottom</dt>
+<dd>Positions the title on the bottom, regardless of the render option used
+</dd>
+<dt>one-line</dt>
+<dd>Positions author and title in one line on the bottom, regardless of the render option used
+</dd>
+<dt>noversewidth</dt>
+<dd>Per default the filter calculates the best position for the poem. If you don’t want this, use this option
+</dd>
+</dl>
+<p><strong>Attributes:</strong></p>
+<dl>
+<dt>author</dt>
+<dd>The author of the poem
+</dd>
+<dt>title</dt>
+<dd>The title of the poem
+</dd>
+<dt>poemlines</dt>
+<dd>Needs a number. Adds a line number every number of lines
+</dd>
+<dt>versewidth</dt>
+<dd>Needs a line of the poem, used to position the poem. Normally this is calculated automatically, use this, if you want to set it manually
+</dd>
+</dl>
+<h3 id="quote"><span class="header-section-number">0.9.8</span> quote</h3>
+<p>Styles the content as a quote. Of course markdown has its own syntax for quotes. You only need this style, if you want to include an author and/or a title.</p>
+<p>There are three render options for this style, each just formating the quote slightly different.</p>
+<p><strong>Render Options:</strong></p>
+<dl>
+<dt>bottom</dt>
+<dd>Title and author are positioned on the bottom right of the quote
+</dd>
+<dt>one-line</dt>
+<dd>As above, but title and author appear on one line
+</dd>
+<dt>top</dt>
+<dd>This filter inserts the title at the top of the quote
+</dd>
+</dl>
+<p><strong>Options:</strong></p>
+<dl>
+<dt>top</dt>
+<dd>Positions the title on the top, regardless of the render option used
+</dd>
+<dt>bottom</dt>
+<dd>Positions the title on the bottom, regardless of the render option used
+</dd>
+<dt>one-line</dt>
+<dd>Positions author and title in one line on the bottom, regardless of the render option used
+</dd>
+</dl>
+<p><strong>Attributes:</strong></p>
+<dl>
+<dt>author</dt>
+<dd>The author of the quote
+</dd>
+<dt>title</dt>
+<dd>The title of the quote
+</dd>
+</dl>
+<h2 id="filter"><span class="header-section-number">0.10</span> Filter</h2>
+<p>Here are some additional filters, not used for styling elements.</p>
+<h3 id="epub_remove_fm_head"><span class="header-section-number">0.10.1</span> epub_remove_fm_head</h3>
+<p>This filter is used for a technical issue. Just keep it active.</p>
+<h3 id="header_fleuron"><span class="header-section-number">0.10.2</span> header_fleuron</h3>
+<p>Adds an image beneath each heading. You need to provide an image in the options.</p>
+<h3 id="remove_comments"><span class="header-section-number">0.10.3</span> remove_comments</h3>
+<p>You can use html comments to annotate your text. This filter removes this comments from the output.</p>
+<h3 id="remove_images"><span class="header-section-number">0.10.4</span> remove_images</h3>
+<p>Removes all images from the output.</p>
+</div>
+</div>
+</body>
+</html>
