@@ -10,10 +10,10 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 setup(
     name='panovel',
     version='0.5',
-    description='A script to make a novel out of markdown with the help of pandoc',
+    description='A script to make a novel out of markdown files with the help of pandoc',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/',
+    url='https://github.com/dickloraine/panovel',
     author='dloraine',
     author_email='dickloraine@gmx.net',
     license='MIT',
