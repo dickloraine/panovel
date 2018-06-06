@@ -300,8 +300,8 @@ Just use `---` for horizontal lines.
 default
 :   A new scene is marked by blank space
 
-stars
-:   A new scene is marked by `* * *`
+text
+:   A new scene is marked by the text given, defaults to `* * *`
 
 fleuron
 :   A new scene is marked by an image. You need to provide an image in

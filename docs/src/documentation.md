@@ -224,8 +224,8 @@ This style is an exception to all others. To make a new scene, just enter three 
 default
  :   A new scene is marked by blank space
 
-stars
- :   A new scene is marked by `* * *`
+text
+ :   A new scene is marked by the text given, defaults to `* * *`
 
 fleuron
  :   A new scene is marked by an image. You need to provide an image in the options

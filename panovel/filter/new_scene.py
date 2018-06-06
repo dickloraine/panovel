@@ -1,18 +1,16 @@
 import re
 
 
-def transform(original_text, fmt, cfg, file_name):
+def transform(original_text, fmt, cfg, _):
     style = "default"
     if cfg.get("new-scene-style"):
         style = cfg.get("new-scene-style", "default")
 
-    def style_new_scene(text):
+    def style_new_scene(_):
         if fmt == "latex" or fmt == "pdf":
-            if style == "stars":
-                return ''.join([r"\par", "\n", r"\vspace{\baselineskip}", "\n",
-                                r"\par", "\n\n", r"\centering", "\n* * *", "\n",
-                                r"\par", "\n", r"\vspace{\baselineskip}", "\n",
-                                r"\par", "\n\n", r"\noindent", "\n"])
+            if style == "text":
+                return ''.join([r"\begin{center}", cfg.get("new-scene-text", "* * *"), r"\end{center}",
+                                '\n', r"\noindent", "\n"])
             elif style == "fleuron":
                 return ''.join([r"\begin{center}", '\n',
                                 r"\includegraphics[width=0.1", r"\textwidth]",
@@ -21,8 +19,9 @@ def transform(original_text, fmt, cfg, file_name):
             return ''.join([r"\par", "\n", r"\vspace{\baselineskip}", "\n",
                             r"\par", "\n\n" + r"\noindent" + "\n"])
         elif fmt == "html" or fmt == "epub" or fmt == "epub3":
-            if style == "stars":
-                return '<p class="NewScene">\* \* \*</p>'
+            if style == "text":
+                text = re.sub(r"([^\w])", r"\\\1", cfg.get("new-scene-text", "* * *"))
+                return f'<p class="NewScene">{text}</p>'
             elif style == "fleuron":
                 return '<div class="NewScene"><img alt="***" class="szeneimg" '\
                        f'src="{cfg.get("new-scene-image")}" /></div>'

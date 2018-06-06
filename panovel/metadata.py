@@ -337,7 +337,11 @@ DEFAULT_METADATA = Metadata({
     ],
 
     'Filter Options': [
-        ('new-scene-style', 'default, stars or fleuron', 'default'),
+        ('new-scene-style', 'default, text or fleuron', 'default'),
+        ('new-scene-text', 'text used for a scene change, if the text option is used. '
+                           'If you use symbols, you have to enclose the entry '
+                           'with quotation marks.',
+         '"* * *"'),
         ('new-scene-image', 'path to the image used for a scene change, '
                             'if fleuron is used as the option', ''),
         ('poem-style', 'bottom, top or one-line', 'bottom'),
@@ -393,8 +397,9 @@ BASIC_METADATA_INCLUDES = [
     'frontmatter', 'backmatter', 'number-sections', 'cover-image',
     'frontmatter-heading', 'epub-stylesheet-options', 'paper', 'BCOR',
     'center-headings', 'fontsize', 'pdf-toc', 'pdf-toc-depth',
-    'new-scene-style', 'new-scene-image', 'poem-style', 'quote-style',
-    'heading-image-level', 'heading-image', 'chapter-list', 'exclude-files'
+    'new-scene-style', 'new-scene-text', 'new-scene-image', 'poem-style',
+    'quote-style', 'heading-image-level', 'heading-image', 'chapter-list',
+    'exclude-files'
 ]
 
 
