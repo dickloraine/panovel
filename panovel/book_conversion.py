@@ -189,6 +189,7 @@ class BookConversion(object):
         # toc related
         prefix = "other" if f'{self.opt_fmt}-toc' not in self.cfg else self.opt_fmt
         add_arg(f'{prefix}-toc', '--toc')
+        prefix = "other" if f'{self.opt_fmt}-toc-depth' not in self.cfg else self.opt_fmt
         add_arg(f'{prefix}-toc-depth', '--toc-depth=')
 
         # back and frontmatter
