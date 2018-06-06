@@ -70,9 +70,11 @@ your computer:
     packages:
     -   koma-script
     -   verse
-    -   titletoc Pandoc needs some packages too. You can find the list
-        in pandocs documentation (depending on the distribution, most or
-        all could be installed already).
+    -   titletoc
+
+    Pandoc needs some packages too. You can find the list in pandocs
+    documentation (depending on the distribution, most or all could be
+    installed already).
 
 4.  Kindlegen: If you want to convert your book for amazons kindle, you
     need this little tool from amazon. You can get it

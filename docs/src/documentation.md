@@ -57,6 +57,7 @@ Before you can use this template, you need some programs installed on your compu
     - koma-script
     - verse
     - titletoc
+
     Pandoc needs some packages too. You can find the list in pandocs documentation (depending on the distribution, most or all could be installed already).
 
 4. Kindlegen:
