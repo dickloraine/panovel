@@ -9,6 +9,8 @@ output-formats:
 
 number-sections: true
 
+markdown-toc-depth: 2
+
 paper: 13.97cm:21.59cm
 BCOR: 10mm
 documentclass: scrartcl
