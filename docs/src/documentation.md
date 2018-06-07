@@ -19,6 +19,8 @@ noindent: true
 toc-dots: true
 
 html-stylesheet: html_stylesheet.scss
+
+panovel-regex-filter:
 ...
 
 ## Introduction
@@ -213,11 +215,11 @@ This style is an exception to all others. To make a new scene, just enter three 
 
 **Example:**
 
-`The last paragraph in the old scene.`
+    The last paragraph in the old scene.
 
-`* * *`
+    * * *
 
-`The first paragraph in the new scene.`
+    The first paragraph in the new scene.
 
 **Render Options:**
 

@@ -1,7 +1,6 @@
 Panovel
 ===============================================
 
-
 -   [Introduction](#introduction)
 -   [How does this work?](#how-does-this-work)
 -   [Installation](#installation)
@@ -289,11 +288,11 @@ Just use `---` for horizontal lines.
 
 **Example:**
 
-`The last paragraph in the old scene.`
+    The last paragraph in the old scene.
 
-`* * *`
+    * * *
 
-`The first paragraph in the new scene.`
+    The first paragraph in the new scene.
 
 **Render Options:**
 

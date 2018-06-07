@@ -330,8 +330,9 @@ class BookConversion(object):
                 new_metadata = f'{self.cfg["title"]} - {self.cfg["subtitle"]}\n'
             else:
                 new_metadata = f'{self.cfg["title"]}\n'
-            new_metadata += "===============================================\n\n"
+            new_metadata += "===============================================\n"
         if self.cfg_get("author"):
+            new_metadata += "\n"
             if isinstance(self.cfg["author"], list):
                 for author in self.cfg["author"]:
                     new_metadata += f'{author}\n'

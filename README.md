@@ -279,11 +279,11 @@ Just use `---` for horizontal lines.
 
 **Example:**
 
-`The last paragraph in the old scene.`
-
-`* * *`
-
-`The first paragraph in the new scene.`
+    The last paragraph in the old scene.
+    
+    * * *
+    
+    The first paragraph in the new scene.
 
 **Render Options:**
 
