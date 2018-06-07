@@ -206,5 +206,5 @@ def stringify(elem, newlines=True):
 
 
 def strip_html_tag(text, tag="p"):
-    text = text.replace(f"<{tag}>")
-    return text.replace(f"</{tag}>")
+    text = text.replace(f"<{tag}>", "")
+    return text.replace(f"</{tag}>", "")
