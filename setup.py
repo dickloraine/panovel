@@ -9,7 +9,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='panovel',
-    version='0.5',
+    version='0.51',
     description='A script to make a novel out of markdown files with the help of pandoc',
     long_description=long_description,
     long_description_content_type='text/markdown',
