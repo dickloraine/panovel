@@ -29,11 +29,11 @@ The purpose of this little project is to make the process of producing a novel t
 
 You just write the book in markdown, a very basic and easy to use markup language. You don't need a word processor for this, every editor will do. Then you just edit the metadata.yaml file with the options you want to use and execute the script. Voila: You have produced your book as an eBook and a pdf, ready to be printed! The main advantage of this method is, that you don't have to maintain different files for different formats.
 
-## How does this work?
+### How does this work?
 
 This project is a wrapper around [pandoc](http://pandoc.org/index.html). It automates many steps that would be needed to convert the files manually and provides an example metadata.yaml file for easy configuration. In addition it provides many filters for pandoc to style some special elements.
 
-## Example
+### Example
 
 You can look at an example project [here](https://github.com/dickloraine/Alices-Adventures-in-Wonderland).
 
