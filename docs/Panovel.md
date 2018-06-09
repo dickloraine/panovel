@@ -3,6 +3,7 @@ Panovel
 
 -   [Introduction](#introduction)
 -   [How does this work?](#how-does-this-work)
+-   [Example](#example)
 -   [Installation](#installation)
 -   [Starting a new project](#starting-a-new-project)
 -   [The command line interface](#the-command-line-interface)
@@ -34,6 +35,12 @@ It automates many steps that would be needed to convert the files
 manually and provides an example metadata.yaml file for easy
 configuration. In addition it provides many filters for pandoc to style
 some special elements.
+
+Example
+-------
+
+You can look at an example project
+[here](https://github.com/dickloraine/Alices-Adventures-in-Wonderland).
 
 Installation
 ------------

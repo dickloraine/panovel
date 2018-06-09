@@ -60,7 +60,8 @@ class ConsoleScript(object):
                             help='Creates a full metadata.yaml file. Can be used '
                                  'stand alone or while making a new project.')
         parser.add_argument('-f', '--formats', nargs='*', default=[],
-                            choices=["epub", "pdf", "md", "epub3", "latex", "html"],
+                            choices=["epub", "pdf", "md", "markdown", "epub3",
+                                     "latex", "html", "mobi", "kindle"],
                             help='The formats that should be produced.')
         parser.add_argument('-s', '--source', nargs='?', default=getcwd(),
                             help='Path to the book directory. '
@@ -227,7 +228,7 @@ class ConsoleScript(object):
                 kindlegen_path = "kindlegen"
             try:
                 epub_path = pjoin(self.args.target, f'{self.cfg["output-name"]}.epub')
-                subprocess.run(f'"{kindlegen_path}" "{epub_path}"', check=True)
+                subprocess.run(f'"{kindlegen_path}" "{epub_path}"', stdout=subprocess.DEVNULL, check=True)
             except FileNotFoundError:
                 logging.error("Kindlegen not found! - No kindle file created.")
             else:

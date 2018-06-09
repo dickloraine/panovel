@@ -33,6 +33,10 @@ You just write the book in markdown, a very basic and easy to use markup languag
 
 This project is a wrapper around [pandoc](http://pandoc.org/index.html). It automates many steps that would be needed to convert the files manually and provides an example metadata.yaml file for easy configuration. In addition it provides many filters for pandoc to style some special elements.
 
+## Example
+
+You can look at an example project [here](https://github.com/dickloraine/Alices-Adventures-in-Wonderland).
+
 ## Installation
 
 ### Prerequisites
