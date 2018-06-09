@@ -255,7 +255,7 @@ DEFAULT_METADATA = Metadata({
          '5.25in:8in'),
         ('BCOR', 'the binding correction (this deepends on the number of '
                  'pages and on the kind of binding)',
-         '10mm'),
+         '3mm'),
         ('center-headings', 'change to "true", if chapter headings should be centered',
          'false'),
         ('fontsize', 'the basic fontsize of the book (the size used for paragraphs)',
